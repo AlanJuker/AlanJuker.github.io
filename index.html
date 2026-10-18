@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en-CA">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Alan Guijarro · Software engineer, applied AI</title>
+    <meta name="description" content="Software engineer with production .NET and Angular experience, building applied AI and data projects measured on real data." />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip" href="#work">Skip to projects</a>
+    <header class="intro">
+      <p class="eyebrow">Software engineer · applied AI</p>
+      <h1>Alan Guijarro</h1>
+      <p class="lede">
+        I build software that holds up on messy, real-world data, and I measure it before I trust it.
+        Three years shipping production systems in .NET and Angular, currently building internal
+        tooling at Ecuador's National Electoral Council. Now moving into applied AI with a second
+        master's in computer science.
+      </p>
+      <nav aria-label="Contact">
+        <a href="https://github.com/AlanJuker">GitHub</a>
+        <a href="https://www.linkedin.com/in/alan-guijarro-pomboza">LinkedIn</a>
+        <a href="mailto:alan4630@gmail.com">alan4630@gmail.com</a>
+      </nav>
+    </header>
+
+    <main id="work">
+      <section aria-labelledby="featured">
+        <h2 id="featured">Featured</h2>
+
+        <article class="feature">
+          <a class="shot" href="https://github.com/AlanJuker/signal-problems">
+            <img src="assets/signal-problems.png" width="1100" height="1700" loading="lazy"
+              alt="signal-problems: a schematic TTC subway map coloured by delays, with Eglinton's delay profile open" />
+          </a>
+          <div class="body">
+            <p class="tag">Data engineering · full stack</p>
+            <h3><a href="https://github.com/AlanJuker/signal-problems">signal-problems</a></h3>
+            <p class="pitch">Toronto subway delays, decoded. Is it really "signal problems"?</p>
+            <p>
+              Turns the TTC's open delay log into a clean dataset, an API and an interactive subway map.
+              The hard part is the data: operators type station names by hand, so the log has
+              <strong>1,251 spellings for 70 stations</strong>, plus renamed stations, typos and names cut
+              off at 22 characters.
+            </p>
+            <ul class="facts">
+              <li><strong>99.7%</strong> of 260,000 rows (2014–2026) resolved, by a resolver that never guesses</li>
+              <li><strong>3.6%</strong> of 5+ minute delays are actual signal failures</li>
+              <li>Commute check: how often your trip got hit, for the period you choose</li>
+            </ul>
+            <p class="stack">Python · FastAPI · PostgreSQL · SQLAlchemy · React · TypeScript · Docker · GitHub Actions</p>
+          </div>
+        </article>
+
+        <article class="feature">
+          <a class="shot" href="https://github.com/AlanJuker/noc-noc">
+            <img src="assets/noc-noc.png" width="900" height="1100" loading="lazy"
+              alt="noc-noc suggesting NOC 2021 codes for a job description" />
+          </a>
+          <div class="body">
+            <p class="tag">Information retrieval · LLMs · evaluation</p>
+            <h3><a href="https://github.com/AlanJuker/noc-noc">noc-noc</a></h3>
+            <p class="pitch">Knock knock. Who's there? Your occupation code.</p>
+            <p>
+              Newcomers to Canada must name their occupation's NOC code to apply for Express Entry.
+              noc-noc finds it from a job title. Every method had to beat the previous one on two
+              benchmarks before it shipped.
+            </p>
+            <table class="results">
+              <caption>Right code in the top 5</caption>
+              <thead><tr><th scope="col">Method</th><th scope="col">Official titles</th><th scope="col">Real Job Bank titles</th></tr></thead>
+              <tbody>
+                <tr><th scope="row">TF-IDF baseline</th><td>88.3%</td><td>72.6%</td></tr>
+                <tr><th scope="row">Embeddings</th><td>93.5%</td><td>79.3%</td></tr>
+                <tr class="best"><th scope="row">Hybrid</th><td>93.6%</td><td>79.4%</td></tr>
+              </tbody>
+            </table>
+            <p class="stack">Python · scikit-learn · embeddings (ONNX) · Claude API · FastAPI · HTMX</p>
+          </div>
+        </article>
+      </section>
+
+      <section aria-labelledby="more">
+        <h2 id="more">More projects</h2>
+        <div class="grid">
+          <article class="card">
+            <h3><a href="https://github.com/AlanJuker/face-liveness-detection">face-liveness-detection</a></h3>
+            <p>Anti-spoofing in the browser: randomized blink, smile and head-turn challenges with TensorFlow.js, and a password-protected evidence gallery.</p>
+            <p class="stack">Angular · TensorFlow.js · Express · PostgreSQL</p>
+          </article>
+          <article class="card">
+            <h3><a href="https://github.com/AlanJuker/rosati-lead-intelligence">rosati-lead-intelligence</a></h3>
+            <p>Sales-lead qualification for a car dealership: Claude scores leads with structured outputs, with a rule-based fallback and CRM routing.</p>
+            <p class="stack">Python · FastAPI · Claude API · PostgreSQL · n8n</p>
+          </article>
+          <article class="card">
+            <h3><a href="https://github.com/AlanJuker/forma-fusion-web">forma-fusion-web</a></h3>
+            <p>Website and admin panel for a design and construction studio, in clean architecture, built for a real client.</p>
+            <p class="stack">Next.js · Prisma · PostgreSQL · Tailwind</p>
+          </article>
+          <article class="card">
+            <h3><a href="https://github.com/AlanJuker/Personal-Counter">Personal-Counter</a></h3>
+            <p>Native iOS tap-to-count app with categories, goals, haptics and local persistence.</p>
+            <p class="stack">Swift · SwiftUI · SwiftData</p>
+          </article>
+        </div>
+      </section>
+
+      <section aria-labelledby="how" class="how">
+        <h2 id="how">How I work</h2>
+        <ul>
+          <li><strong>Measure first.</strong> A baseline before anything clever, and a held-out benchmark the next idea has to beat.</li>
+          <li><strong>Never guess silently.</strong> When the data is ambiguous, the code says so instead of inventing an answer.</li>
+          <li><strong>Reviewable history.</strong> An issue per change, focused commits, pull requests with CI, and decisions recorded as ADRs.</li>
+        </ul>
+      </section>
+
+      <section aria-labelledby="background" class="background">
+        <h2 id="background">Background</h2>
+        <dl>
+          <div><dt>Electoral systems and IT specialist</dt><dd>National Electoral Council of Ecuador · internal tooling that automates processes people ran by hand in spreadsheets</dd></div>
+          <div><dt>MSc Computer Science, Applied AI</dt><dd>In progress</dd></div>
+          <div><dt>MSc Software Engineering and Computer Systems</dt><dd>Universidad Internacional de La Rioja · 2024</dd></div>
+          <div><dt>BSc Information Systems Engineering</dt><dd>Pontificia Universidad Católica del Ecuador · 2023</dd></div>
+          <div><dt>Languages</dt><dd>Spanish (native) · English (C1)</dd></div>
+        </dl>
+      </section>
+    </main>
+
+    <footer>
+      <p>Built with plain HTML and CSS. <a href="https://github.com/AlanJuker/AlanJuker.github.io">Source</a>.</p>
+    </footer>
+  </body>
+</html>
