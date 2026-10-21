@@ -3,35 +3,111 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Alan Guijarro · Software engineer, applied AI</title>
-    <meta name="description" content="Software engineer with production .NET and Angular experience, building applied AI and data projects measured on real data." />
+    <title>Alan Andre Pomboza · AI and full-stack engineer</title>
+    <meta name="description" content="AI and full-stack engineer: three years building election systems for Ecuador's National Electoral Council in .NET, Angular and Oracle, now completing a Master of Computer Science in Applied AI." />
+    <link rel="canonical" href="https://alanjuker.github.io/" />
+    <meta name="theme-color" content="#f6f3ee" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#111317" media="(prefers-color-scheme: dark)" />
+    <meta property="og:type" content="profile" />
+    <meta property="og:url" content="https://alanjuker.github.io/" />
+    <meta property="og:title" content="Alan Andre Pomboza · AI and full-stack engineer" />
+    <meta property="og:description" content="Election systems in .NET, Angular and Oracle, computer-vision identity verification, and applied AI projects measured on real data." />
+    <meta property="og:image" content="https://alanjuker.github.io/assets/og.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Alan Andre Pomboza, AI and full-stack engineer" />
+    <meta property="profile:first_name" content="Alan Andre" />
+    <meta property="profile:last_name" content="Pomboza" />
+    <meta name="twitter:card" content="summary_large_image" />
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Alan Andre Pomboza",
+        "alternateName": "Alan Andre Guijarro Pomboza",
+        "jobTitle": "AI and full-stack engineer",
+        "url": "https://alanjuker.github.io/",
+        "email": "mailto:alan4630@gmail.com",
+        "address": { "@type": "PostalAddress", "addressLocality": "St. Catharines", "addressRegion": "ON", "addressCountry": "CA" },
+        "sameAs": ["https://github.com/AlanJuker", "https://www.linkedin.com/in/alan-andre-pomboza/"],
+        "alumniOf": [
+          { "@type": "CollegeOrUniversity", "name": "Universidad Internacional de La Rioja" },
+          { "@type": "CollegeOrUniversity", "name": "Pontificia Universidad Católica del Ecuador" }
+        ],
+        "knowsLanguage": ["es", "en"],
+        "knowsAbout": ["Applied AI", "Information retrieval", "Computer vision", ".NET", "Angular", "Oracle PL/SQL", "Databricks", "Python", "FastAPI", "React"]
+      }
+    </script>
   </head>
   <body>
-    <a class="skip" href="#work">Skip to projects</a>
+    <a class="skip" href="#content">Skip to content</a>
     <header class="intro">
-      <p class="eyebrow">Software engineer · applied AI</p>
-      <h1>Alan Guijarro</h1>
+      <p class="eyebrow">AI and full-stack engineer · St. Catharines, Ontario</p>
+      <h1>Alan Andre Pomboza</h1>
       <p class="lede">
-        I build software that holds up on messy, real-world data, and I measure it before I trust it.
-        Three years shipping production systems in .NET and Angular, currently building internal
-        tooling at Ecuador's National Electoral Council. Now moving into applied AI with a second
-        master's in computer science.
+        Three years at Ecuador's National Electoral Council building election systems end to end, from
+        Oracle stored procedures and .NET APIs to Angular interfaces, including computer-vision identity
+        verification. Now completing a Master of Computer Science in Applied AI, and building AI projects
+        I measure on real data before I trust them.
       </p>
       <nav aria-label="Contact">
         <a href="https://github.com/AlanJuker">GitHub</a>
-        <a href="https://www.linkedin.com/in/alan-guijarro-pomboza">LinkedIn</a>
+        <a href="https://www.linkedin.com/in/alan-andre-pomboza/">LinkedIn</a>
         <a href="mailto:alan4630@gmail.com">alan4630@gmail.com</a>
+        <a href="assets/Alan_Andre_Pomboza_Resume.pdf" type="application/pdf">Résumé (PDF)</a>
       </nav>
     </header>
 
-    <main id="work">
+    <main id="content">
+      <section aria-labelledby="experience">
+        <h2 id="experience">Experience</h2>
+
+        <article class="job">
+          <div class="job-head">
+            <h3>National Electoral Council of Ecuador (CNE)</h3>
+            <p class="when">Sep 2023 – Oct 2026 · Quito</p>
+          </div>
+          <p class="role">Electoral Systems &amp; IT Analyst · full-stack developer</p>
+          <ul>
+            <li><strong>Political finance accounting.</strong> The accounting system for political organizations' financing: Oracle 19c stored procedures, .NET 6 and 8 Web APIs, Angular interfaces.</li>
+            <li><strong>Candidacy simulator.</strong> Used for every candidacy to check that a political organization meets the legal gender-parity and youth-inclusion requirements.</li>
+            <li><strong>Voto Informado.</strong> The web app where voters read candidates' work plans and proposals.</li>
+            <li><strong>Electoral address change.</strong> Citizens change their voting address online. I built the system and its anti-spoofing identity check, a computer-vision module that tells a real person from a spoof. That code is confidential; <a href="https://github.com/AlanJuker/face-liveness-detection">the prototype is public</a>.</li>
+          </ul>
+          <p class="stack">C# · .NET 6 / 8 · Angular · Oracle 19c (PL/SQL) · computer vision · XtraReports · Power BI · Azure DevOps</p>
+        </article>
+
+        <article class="job">
+          <div class="job-head">
+            <h3>Stimulus, Inc.</h3>
+            <p class="when">Dec 2025 – Feb 2026 · Remote</p>
+          </div>
+          <p class="role">AI Software Engineer · contract</p>
+          <ul>
+            <li>Built Databricks data pipelines and production AI solutions for a US client, one of three engineers mentored by a senior AI/ML engineer specializing in agentic AI.</li>
+            <li>Took the work from client requirements and solution design through implementation and delivery.</li>
+          </ul>
+        </article>
+
+        <article class="job">
+          <div class="job-head">
+            <h3>IOET</h3>
+            <p class="when">Jan – Jun 2023 · Remote</p>
+          </div>
+          <p class="role">IT intern</p>
+          <ul>
+            <li>Front-end and back-end features on full-stack client projects, with distributed international teams.</li>
+          </ul>
+        </article>
+      </section>
+
       <section aria-labelledby="featured">
-        <h2 id="featured">Featured</h2>
+        <h2 id="featured">Featured projects</h2>
 
         <article class="feature">
           <a class="shot" href="https://github.com/AlanJuker/signal-problems">
@@ -90,7 +166,7 @@
         <div class="grid">
           <article class="card">
             <h3><a href="https://github.com/AlanJuker/face-liveness-detection">face-liveness-detection</a></h3>
-            <p>Anti-spoofing in the browser: randomized blink, smile and head-turn challenges with TensorFlow.js, and a password-protected evidence gallery.</p>
+            <p>The public prototype of the CNE's anti-spoofing check: randomized blink, smile and head-turn challenges with TensorFlow.js, and a password-protected evidence gallery.</p>
             <p class="stack">Angular · TensorFlow.js · Express · PostgreSQL</p>
           </article>
           <article class="card">
@@ -120,20 +196,30 @@
         </ul>
       </section>
 
-      <section aria-labelledby="background" class="background">
-        <h2 id="background">Background</h2>
+      <section aria-labelledby="skills" class="background">
+        <h2 id="skills">Skills</h2>
         <dl>
-          <div><dt>Electoral systems and IT specialist</dt><dd>National Electoral Council of Ecuador · internal tooling that automates processes people ran by hand in spreadsheets</dd></div>
-          <div><dt>MSc Computer Science, Applied AI</dt><dd>In progress</dd></div>
-          <div><dt>MSc Software Engineering and Computer Systems</dt><dd>Universidad Internacional de La Rioja · 2024</dd></div>
-          <div><dt>BSc Information Systems Engineering</dt><dd>Pontificia Universidad Católica del Ecuador · 2023</dd></div>
+          <div><dt>AI and machine learning</dt><dd>Python · scikit-learn · embeddings and hybrid retrieval · Claude and OpenAI APIs, structured outputs · computer vision, TensorFlow.js · evaluation on held-out benchmarks</dd></div>
+          <div><dt>Data</dt><dd>Databricks · Oracle 19c (PL/SQL, stored procedures) · PostgreSQL · SQL Server · MySQL · Power BI</dd></div>
+          <div><dt>Back end</dt><dd>C# · .NET 6 / 8 · REST APIs · FastAPI · SQLAlchemy</dd></div>
+          <div><dt>Front end</dt><dd>TypeScript · Angular · React · Next.js · HTMX</dd></div>
+          <div><dt>Delivery</dt><dd>Git · GitHub Actions · Azure DevOps · Docker · Scrum</dd></div>
+        </dl>
+      </section>
+
+      <section aria-labelledby="education" class="background">
+        <h2 id="education">Education</h2>
+        <dl>
+          <div><dt>Master of Computer Science, Applied AI</dt><dd>University of Niagara Falls Canada · 2025 – present</dd></div>
+          <div><dt>Master's in Software Engineering and Computer Systems</dt><dd>Universidad Internacional de La Rioja · 2024</dd></div>
+          <div><dt>Bachelor's in Systems Engineering</dt><dd>Pontificia Universidad Católica del Ecuador · 2023</dd></div>
           <div><dt>Languages</dt><dd>Spanish (native) · English (C1)</dd></div>
         </dl>
       </section>
     </main>
 
     <footer>
-      <p>Built with plain HTML and CSS. <a href="https://github.com/AlanJuker/AlanJuker.github.io">Source</a>.</p>
+      <p>© 2026 Alan Andre Pomboza. Built with plain HTML and CSS. <a href="https://github.com/AlanJuker/AlanJuker.github.io">Source</a>.</p>
     </footer>
   </body>
 </html>

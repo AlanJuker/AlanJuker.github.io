@@ -117,6 +117,17 @@ section { padding: 3rem 0; border-top: 1px solid var(--rule); }
 .background dt { font-weight: 600; }
 .background dd { margin: 0; color: var(--soft); }
 
+.job { padding: 1.5rem 0; border-bottom: 1px solid var(--rule); }
+.job:first-of-type { padding-top: 0; }
+.job:last-of-type { border-bottom: 0; padding-bottom: 0; }
+.job-head { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 0.25rem 1rem; }
+.job h3 { font-size: 1.35rem; }
+.when { margin: 0; font-size: 0.9rem; color: var(--soft); font-variant-numeric: tabular-nums; }
+.role { margin: 0 0 0.75rem; font-weight: 500; color: var(--soft); }
+.job ul { margin: 0; padding-left: 1.1rem; }
+.job li { margin-bottom: 0.45rem; }
+.job li::marker { color: var(--accent); }
+
 footer { padding-top: 2rem; padding-bottom: 3rem; color: var(--soft); font-size: 0.85rem; border-top: 1px solid var(--rule); }
 
 @media (max-width: 52rem) {
