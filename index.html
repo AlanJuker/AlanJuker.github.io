@@ -105,11 +105,12 @@
               alt="signal-problems: a schematic TTC subway map coloured by delays, with Eglinton's delay profile open" />
           </a>
           <div class="body">
-            <p class="tag">Data engineering · full stack</p>
+            <p class="tag">Data engineering · machine learning · full stack</p>
             <h3><a href="https://github.com/AlanJuker/signal-problems">signal-problems</a></h3>
             <p class="pitch">Toronto subway delays, decoded. Is it really "signal problems"?</p>
             <p>
-              Turns the TTC's open delay log into a clean dataset, an API and an interactive subway map.
+              Turns the TTC's open delay log into a clean dataset, a delay model, an API and an interactive
+              subway map.
               The hard part is the data: operators type station names by hand, so the log has
               <strong>1,251 spellings for 70 stations</strong>, plus renamed stations, typos and names cut
               off at 22 characters.
@@ -117,9 +118,12 @@
             <ul class="facts">
               <li><strong>99.7%</strong> of 260,000 rows (2014–2026) resolved, by a resolver that never guesses</li>
               <li><strong>3.6%</strong> of 5+ minute delays are actual signal failures</li>
-              <li>Commute check: how often your trip got hit, for the period you choose</li>
+              <li>A gradient boosting model beats the historical frequency on held-out 2025–2026 data
+                (log loss <strong>−4.3%</strong>), and the commute check shows its chance next to that frequency</li>
+              <li>Commute check: how often your trip got hit, for the period you choose, timed from the TTC's
+                published schedule</li>
             </ul>
-            <p class="stack">Python · FastAPI · PostgreSQL · SQLAlchemy · React · TypeScript · Docker · GitHub Actions</p>
+            <p class="stack">Python · FastAPI · PostgreSQL · SQLAlchemy · scikit-learn · pandas · React · TypeScript · Docker · GitHub Actions</p>
           </div>
         </article>
 
